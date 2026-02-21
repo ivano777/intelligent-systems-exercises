@@ -10,8 +10,10 @@ readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
     "numpy",
+    "matplotlib",
 ]
 
-#[project.optional-dependencies]
-# aggiungere librerie extra (es. per grafici)
-#dev = ["matplotlib", "pandas"]
+# Puoi mantenere questa sezione se vuoi installare strumenti di sviluppo
+# separatamente, come formattatori o linter.
+[project.optional-dependencies]
+dev = ["pytest", "black"]
